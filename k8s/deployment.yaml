@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prt-webapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prt-webapp
+  template:
+    metadata:
+      labels:
+        app: prt-webapp
+    spec:
+      containers:
+      - name: prt-webapp
+        image: YOUR_DOCKERHUB_USERNAME/prt-webapp:latest
+        ports:
+        - containerPort: 80
