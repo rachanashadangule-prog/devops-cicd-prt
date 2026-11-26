@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'docker-agent' }
     environment {
-        IMAGE_NAME = "rachanashadangule-prog/prt-webapp:latest"
+        IMAGE_NAME = "rachanashadangule/prt-webapp:latest"
     }
     stages {
         stage('Pull Code') {

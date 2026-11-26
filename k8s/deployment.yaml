@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: prt-webapp
-        image: YOUR_DOCKERHUB_USERNAME/prt-webapp:latest
+        image: rachanashadangule/prt-webapp:latest
         ports:
         - containerPort: 80
